@@ -1,10 +1,10 @@
 # Bitácora · Gamarrita KFC
 
 ## Equipo
-- Grupo N.°: (completar)
+- Grupo N.°: (D)
 - Tienda: Gamarrita KFC (ropa urbana)
-- Repositorio: (URL)
-- Sitio publicado: (URL de GitHub Pages)
+- Repositorio: ([URL](https://github.com/79462930-dev/Gamarrita-KFC.git))
+- Sitio publicado: (https://79462930-dev.github.io/Gamarrita-KFC/)
 
 | Integrante | Usuario de GitHub |
 |---|---|
