@@ -8,6 +8,78 @@
   <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-  <!-- Inicio: aquí va el contenido (header, nav, main, footer) -->
+
+  <header class="cabecera">
+    <div class="contenedor barra">
+      <a href="index.html" class="logo">Gamarrita <strong>KFC</strong></a>
+      <nav aria-label="Principal">
+        <ul class="menu">
+          <li><a href="index.html" aria-current="page">Inicio</a></li>
+          <li><a href="catalogo.html">Catálogo</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="carrito.html">Carrito <span id="contador" class="contador">0</span></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="contenedor hero-grid">
+        <div>
+          <h1>Ropa urbana directo desde Gamarra</h1>
+          <p>Polos, pantalones y accesorios con estilo propio, a precios que te van a gustar.</p>
+          <a href="catalogo.html" class="btn btn-grande">Ver catálogo</a>
+        </div>
+        <img src="img/polo-oversize.webp" alt="Polo oversize negro de Gamarrita KFC" width="300" height="300">
+      </div>
+    </section>
+
+    <section class="beneficios">
+      <div class="contenedor beneficios-grid">
+        <div>
+          <h3>Envío gratis</h3>
+          <p>En compras desde S/ 250.</p>
+        </div>
+        <div>
+          <h3>Cupones</h3>
+          <p>Prueba GAMARRA10 y obtén 10 % de descuento.</p>
+        </div>
+        <div>
+          <h3>Precios con IGV</h3>
+          <p>Lo que ves es lo que pagas, sin sorpresas.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion">
+      <div class="contenedor">
+        <h2>Productos destacados</h2>
+        <div id="destacados" class="rejilla"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor">
+      <p><strong>Gamarrita KFC</strong> · Tienda en línea de ropa urbana</p>
+      <p>Proyecto del curso Diseño Web · Universidad Continental</p>
+    </div>
+  </footer>
+
+  <!-- Ventana de detalle (la usa el botón "Ver detalle" de los destacados) -->
+  <dialog id="detalle">
+    <button type="button" class="cerrar" data-cerrar aria-label="Cerrar">&times;</button>
+    <div id="detalle-contenido" class="detalle-grid"></div>
+  </dialog>
+
+  <!-- Mensaje flotante -->
+  <div id="aviso" class="aviso" role="status" aria-live="polite"></div>
+
+  <!-- El orden importa: app.js siempre al final -->
+  <script src="js/datos.js"></script>
+  <script src="js/calculos.js"></script>
+  <script src="js/carrito.js"></script>
+  <script src="js/app.js"></script>
 </body>
 </html>

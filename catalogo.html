@@ -8,6 +8,58 @@
   <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-  <!-- Catálogo: aquí va el contenido (header, nav, main, footer) -->
+
+  <header class="cabecera">
+    <div class="contenedor barra">
+      <a href="index.html" class="logo">Gamarrita <strong>KFC</strong></a>
+      <nav aria-label="Principal">
+        <ul class="menu">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="catalogo.html" aria-current="page">Catálogo</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="carrito.html">Carrito <span id="contador" class="contador">0</span></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="seccion">
+    <div class="contenedor">
+      <h1>Catálogo</h1>
+
+      <div class="filtros">
+        <div class="campo">
+          <label for="buscador">Buscar (atajo: tecla /)</label>
+          <input type="search" id="buscador" placeholder="Ej. polo, jean, gorra">
+        </div>
+        <div class="campo">
+          <label for="filtro-categoria">Categoría</label>
+          <select id="filtro-categoria"></select>
+        </div>
+      </div>
+
+      <div id="catalogo" class="rejilla"></div>
+      <p id="sin-resultados" class="vacio" hidden>No encontramos productos con esa búsqueda.</p>
+    </div>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor">
+      <p><strong>Gamarrita KFC</strong> · Tienda en línea de ropa urbana</p>
+      <p>Proyecto del curso Diseño Web · Universidad Continental</p>
+    </div>
+  </footer>
+
+  <dialog id="detalle">
+    <button type="button" class="cerrar" data-cerrar aria-label="Cerrar">&times;</button>
+    <div id="detalle-contenido" class="detalle-grid"></div>
+  </dialog>
+
+  <div id="aviso" class="aviso" role="status" aria-live="polite"></div>
+
+  <script src="js/datos.js"></script>
+  <script src="js/calculos.js"></script>
+  <script src="js/carrito.js"></script>
+  <script src="js/app.js"></script>
 </body>
 </html>

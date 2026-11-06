@@ -9,3 +9,4 @@ const productos = [
   { id: "p07", nombre: "Gorra snapback", precio: 39.9, categoria: "accesorios", imagen: "img/gorra-snapback.webp", stock: 25, descripcion: "Visera plana con cierre ajustable atrás." },
   { id: "p08", nombre: "Mochila urbana", precio: 99.9, categoria: "accesorios", imagen: "img/mochila-urbana.webp", stock: 6, descripcion: "Compartimiento para laptop de 15 pulgadas." }
 ];
+ 

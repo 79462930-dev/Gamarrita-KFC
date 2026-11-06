@@ -8,6 +8,61 @@
   <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-  <!-- Carrito: aquí va el contenido (header, nav, main, footer) -->
+
+  <header class="cabecera">
+    <div class="contenedor barra">
+      <a href="index.html" class="logo">Gamarrita <strong>KFC</strong></a>
+      <nav aria-label="Principal">
+        <ul class="menu">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="catalogo.html">Catálogo</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="carrito.html" aria-current="page">Carrito <span id="contador" class="contador">0</span></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="seccion">
+    <div class="contenedor">
+      <h1>Tu carrito</h1>
+
+      <div class="carrito-grid">
+        <div id="lineas-carrito"></div>
+
+        <aside id="resumen" class="resumen" hidden>
+          <h2>Resumen</h2>
+
+          <form id="form-cupon" class="form-cupon">
+            <label for="cupon">¿Tienes un cupón?</label>
+            <div class="fila">
+              <input type="text" id="cupon" name="cupon" placeholder="GAMARRA10">
+              <button type="submit" class="btn-secundario">Aplicar</button>
+            </div>
+            <p id="msg-cupon" class="msg-cupon" role="status"></p>
+          </form>
+
+          <dl id="resumen-detalle"></dl>
+
+          <button type="button" class="btn btn-grande" data-finalizar>Finalizar compra</button>
+          <p class="nota">Proyecto académico: no se realiza ningún cobro real.</p>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor">
+      <p><strong>Gamarrita KFC</strong> · Tienda en línea de ropa urbana</p>
+      <p>Proyecto del curso Diseño Web · Universidad Continental</p>
+    </div>
+  </footer>
+
+  <div id="aviso" class="aviso" role="status" aria-live="polite"></div>
+
+  <script src="js/datos.js"></script>
+  <script src="js/calculos.js"></script>
+  <script src="js/carrito.js"></script>
+  <script src="js/app.js"></script>
 </body>
 </html>
