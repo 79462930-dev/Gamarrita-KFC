@@ -9,3 +9,10 @@ Tienda en línea de ropa urbana. Proyecto del curso Diseño Web (24UC00351), Uni
 | Archivo | Autor | Sitio y enlace |
 |---|---|---|
 | img/polo-oversize.webp | (autor) | (Unsplash / Pexels / Pixabay + enlace) |
+| short-cargo.webp       |                                                       
+| polo-estampado.webp    |
+| polo-basico.webp       |
+| mochila-urbana.webp    |
+| jogger-gris.webp       |
+| jean-recto.webp        |
+| gorra-snapback.webp    |
