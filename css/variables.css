@@ -1,0 +1,19 @@
+/* variables.css — paleta, tipografía y espaciados de Gamarrita KFC */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap");
+
+:root {
+  --color-primario: #1B1B1F;
+  --color-acento: #F2B705;
+  --color-fondo: #FAF7F0;
+  --color-superficie: #FFFFFF;
+  --color-texto: #222222;
+  --color-texto-suave: #6B6558;
+  --color-borde: #E6DFCF;
+  --color-exito: #1E7A45;
+  --color-error: #B03A2E;
+
+  --fuente: "Poppins", "Segoe UI", system-ui, sans-serif;
+  --radio: 0.9rem;
+  --espacio: 1rem;
+  --ancho: min(94%, 1100px);
+}
